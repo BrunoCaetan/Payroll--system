@@ -7,6 +7,5 @@
         public string licenca { get; set; }
         public int DataLicenca { get; set; }
 
-
     }
 }

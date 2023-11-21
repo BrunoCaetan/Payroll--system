@@ -1,3 +1,7 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Payroll_system.Data;
+
 namespace Payroll_system
 {
     public class Program
@@ -8,6 +12,11 @@ namespace Payroll_system
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddDbContext<BancoContext>(options =>
+            {
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DataBase"));
+            });
 
             var app = builder.Build();
 

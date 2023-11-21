@@ -18,7 +18,23 @@ namespace Payroll_system.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Empresa()
+        {
+            return View();
+        }
+        public IActionResult Funcionario()
+        {
+            return View();
+        }
+        public IActionResult Ferias()
+        {
+            return View();
+        }
+        public IActionResult Licenca()
+        {
+            return View();
+        }
+        public IActionResult Folha()
         {
             return View();
         }
