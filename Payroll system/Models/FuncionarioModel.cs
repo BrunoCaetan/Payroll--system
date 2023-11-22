@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Payroll_system.Models
 {
-    public class CadastrarFuncionarioModel
+    public class FuncionarioModel
     {
         public int Id { get; set; }
         [Required(ErrorMessage = "Preecha o campo")]

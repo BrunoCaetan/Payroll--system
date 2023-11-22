@@ -1,6 +1,6 @@
 ﻿namespace Payroll_system.Models
 {
-    public class CalculoSalarioModel
+    public class HoleriteModel
     {
         public string HorasTrabalhadas { get; set; }
         public double AtrasosEFaltas { get; set; }

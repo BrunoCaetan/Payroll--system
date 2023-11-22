@@ -34,7 +34,7 @@ namespace Payroll_system.Controllers
         {
             return View();
         }
-        public IActionResult Folha()
+        public IActionResult Holerite()
         {
             return View();
         }

@@ -1,6 +1,6 @@
 ﻿namespace Payroll_system.Models
 {
-    public class CadastrarEmpresaModel
+    public class EmpresaModel
     {
         public string NomeDaEmpresa { get; set; }
         public int Cnpj { get; set; }

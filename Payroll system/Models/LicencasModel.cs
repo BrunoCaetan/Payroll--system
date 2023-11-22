@@ -1,6 +1,6 @@
 ﻿namespace Payroll_system.Models
 {
-    public class AdministrarLicençasModel
+    public class LicencasModel
     {
         public int Id { get; set; }
         public string Nome { get; set; }
