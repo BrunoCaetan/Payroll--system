@@ -26,6 +26,42 @@ body {
     padding: 100px 0px 200px 0px;
 }
 
+.tituloFuncionario {
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0px 30px 0px;
+}
+
+.tituloEmpresa {
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0px 30px 0px;
+}
+
+.tituFerias {
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0px 30px 0px;
+}
+
+.tituloHolerite {
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0px 30px 0px;
+}
+
+.tituloLicenca {
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0px 30px 0px;
+}
+
+
 .AcessoRapido {
     color: black;
     padding: 0px 0px 20px 0px
