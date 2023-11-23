@@ -11,7 +11,7 @@ namespace Payroll_system.Models
     {
         [Key]
         [Column("NomeEmpresa")]
-        [Display(Name = "Código")]
+        [Display(Name = "Nome")]
         public string NomeDaEmpresa { get; set; }
 
         [Column("Cnpj")]
