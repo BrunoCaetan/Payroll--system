@@ -191,10 +191,6 @@ span {
     gap: 50px;
 }
 
-.apresentacao__conteudo__titulo__projeto {
-    font-size: 2.25rem;
-    font-family: var(--fonte-primaria);
-}
 
 .apresentacao__links__pg__projeto {
     display: flex;
