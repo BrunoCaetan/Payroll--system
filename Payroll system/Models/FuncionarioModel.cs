@@ -121,13 +121,9 @@ namespace Payroll_system.Models
         [Display(Name = "TipoDeConta")]
         public string TipoDeConta { get; set; }
 
-        [Column("Perfil")]
-        [Display(Name = "Perfil")]
-        public PerfilEnum Perfil { get; set; }
-
         [Column("DataAtualizacao")]
         [Display(Name = "DataAtualizacao")]
         public DateTime? DataAtualizacao { get; set; }
-    
+
     }
 }
