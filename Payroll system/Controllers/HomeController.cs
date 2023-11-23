@@ -1,11 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Payroll_system.Models;
+using Payroll_system.Repositorio;
 using System.Diagnostics;
 
 namespace Payroll_system.Controllers
 {
     public class HomeController : Controller
+
     {
+   
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
@@ -17,9 +20,10 @@ namespace Payroll_system.Controllers
         {
             return View();
         }
-
-        public IActionResult Empresa()
+        
+        public IActionResult Empresa( )
         {
+
             return View();
         }
         public IActionResult Funcionario()

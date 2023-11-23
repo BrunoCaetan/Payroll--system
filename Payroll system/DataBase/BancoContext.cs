@@ -13,6 +13,7 @@ namespace Payroll_system.Data
         public DbSet<EmpresaModel> Empresa { get; set; }
         public DbSet<HoleriteModel> Salario { get; set; }
         public DbSet<FeriasModel> ferias { get; set; }
+        public DbSet<UsuarioModel> Usuarios { get; set; }
     }
 }
 //  
