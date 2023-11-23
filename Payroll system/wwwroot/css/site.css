@@ -23,7 +23,7 @@ body {
     color: black;
     display: flex;
     justify-content: center;
-    padding: 100px 0px 200px 0px;
+    padding: 80px 0px 200px 0px;
 }
 
 .tituloFuncionario {
@@ -89,21 +89,8 @@ body {
 
 
 
-:root {
-    --cor-primaria: #ffffff;
-    --cor-secundaria: #DCD7C9;
-    --cor-terciaria: #000000;
-    --cor-hover: #3F4E4F;
-    --fonte-primaria: 'Krona One', sans-serif;
-    --fonte-secundaria: 'Montserrat', sans-serif;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
 /* criando barra de navegação */
+
 ul {
     list-style: none;
     display: flex;
@@ -159,6 +146,11 @@ img {
     max-width: 100%;
     margin: 0px 0px 0px 50px;
 }
+
+
+
+
+
 /* barra de navegação terminada */
 
 body {
@@ -169,45 +161,10 @@ body {
 }
 
 
-img {
-    width: 400px;
-    border: var(--cor-terciaria);
-    border-radius: 5%;
-}
-
-
-.img__certificado {
-    width: 800px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 100px 70px;
-    gap: 50px;
-    flex-direction: column;
-}
-
-
-.titulo-destaque {
-    color: var(--cor-terciaria);
-}
-
-h1 {
-    font-weight: bold;
-}
-
 span {
     color: var(--cor-terciaria);
     border: 1px solid var(--cor-terciaria);
     padding: 1px;
-}
-
-.apresentacao {
-    padding: 5% 15%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 82px;
 }
 
 .apresentacao__conteudo {

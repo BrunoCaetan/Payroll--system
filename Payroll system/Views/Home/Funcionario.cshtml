@@ -2,7 +2,18 @@
     ViewData["Title"] = "Cadastrar Funcionario";
 }
 
-<h1 class="tituloFuncionario">Cadastro de Funcionários</h1>
+<h1 class="tituloFuncionario">Cadastrar novo um Funcionário</h1>
+<br/>
+
+
+<div class="d-grid gap-2 col-4 mx-auto">
+    <a role="button" class="btn btn-success" asp-controller="Button" asp-action="FuncionarioCadastrar">CADASTRAR</a>
+</div>
+<br />
+<br />
+
+<h1 class="tituloFuncionario">Lista de Funcionários</h1>
+<br />
 
 <div class="table-responsive">
 <table class="table table-hover">
@@ -29,6 +40,7 @@
             <th scope="col">Agencia</th>
             <th scope="col">Conta</th>
             <th scope="col">TipoDeConta</th>
+            <th scope="col"></th>
         </tr>
     </thead>
     <tbody>
@@ -54,6 +66,12 @@
             <td>9097</td>
             <td>86605-8</td>
             <td>Corrente</td>
+            <td>
+                <div class="btn-group" role="group" >
+                    <a role="button" class="btn btn-primary">Editar</a>
+                    <a role="button" class="btn btn-danger">Excluir</a>
+                </div>
+            </td>
         </tr>
         <tr>
             <th scope="row">2</th>
@@ -77,6 +95,12 @@
             <td>5400</td>
             <td>65244-2</td>
             <td>Corrente</td>
+            <td>
+                <div class="btn-group" role="group" >
+                    <a role="button" class="btn btn-primary">Editar</a>
+                    <a role="button" class="btn btn-danger">Excluir</a>
+                </div>
+            </td>
         </tr>
         <tr>
             <th scope="row">3</th>
@@ -100,8 +124,16 @@
             <td>4532</td>
             <td>54367-3</td>
             <td>Corrente</td>
+            <td>
+                <div class="btn-group" role="group" >
+                    <a role="button" class="btn btn-primary">Editar</a>
+                    <a role="button" class="btn btn-danger">Excluir</a>
+                </div>
+            </td>
         </tr>
     </tbody>
 </table>
 </div>
+
+
 
