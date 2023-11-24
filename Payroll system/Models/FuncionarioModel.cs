@@ -1,5 +1,4 @@
-﻿using Payroll_system.Enums;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Payroll_system.Models

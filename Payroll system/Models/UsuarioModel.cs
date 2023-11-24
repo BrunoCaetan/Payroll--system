@@ -1,11 +1,12 @@
-﻿using Payroll_system.Enums;
+﻿
+using Payroll_system.Enums;
 
 namespace Payroll_system.Models
 {
     public class UsuarioModel
     {
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string Nome { get; set; }
         public string Login {  get; set; }
         public string Email { get; set; }
         public PerfilEnum Perfil { get; set; }
