@@ -1,0 +1,84 @@
+﻿@model Payroll_system.Models.HoleriteModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>HoleriteModel</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AtrasosEFaltas)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AtrasosEFaltas)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SalarioBruto)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SalarioBruto)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SalarioLiquido)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SalarioLiquido)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TaxasDePagamento)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TaxasDePagamento)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ImpostoDeRenda)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ImpostoDeRenda)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Inss)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Inss)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HorasExtras)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HorasExtras)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AdicionalNoturno)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AdicionalNoturno)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AdicionalPericulosidade)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AdicionalPericulosidade)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AdicionalInsalubridade)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AdicionalInsalubridade)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Fgts)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Fgts)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.HorasTrabalhadas">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
