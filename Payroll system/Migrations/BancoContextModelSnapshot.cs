@@ -88,94 +88,115 @@ namespace Payroll_system.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("Id");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int>("Agencia")
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("Agencia");
 
                     b.Property<string>("Cargo")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("Cargo");
 
                     b.Property<int>("Conta")
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("Conta");
 
                     b.Property<int>("Cpf")
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("Cpf");
 
                     b.Property<DateTime?>("DataAtualizacao")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime2")
+                        .HasColumnName("DataAtualizacao");
 
                     b.Property<int>("DataDeAdmissão")
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("DataDeAdmissão");
 
                     b.Property<int>("DataDeNascimento")
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("DataDeNascimento");
 
                     b.Property<string>("Departamento")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("Departamento");
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("Email");
 
                     b.Property<string>("Endereco")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("Endereco");
 
                     b.Property<string>("EstadoCivil")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("EstadoCivil");
 
                     b.Property<string>("HorasTrabalhadas")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("HorasTrabalhadas");
 
                     b.Property<string>("Login")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("Login");
 
                     b.Property<string>("Nacionalidade")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("Nacionalidade");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("Name");
 
                     b.Property<string>("NomeDoBanco")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Perfil")
-                        .HasColumnType("int");
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("NomeDoBanco");
 
                     b.Property<int>("Pis")
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("Pis");
 
                     b.Property<int>("Rg")
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("Rg");
 
                     b.Property<double>("SalarioContratual")
-                        .HasColumnType("float");
+                        .HasColumnType("float")
+                        .HasColumnName("SalarioContratual");
 
                     b.Property<string>("Senha")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("Senha");
 
                     b.Property<string>("Sexo")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("Sexo");
 
                     b.Property<int>("Telefone")
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("Telefone");
 
                     b.Property<string>("TipoDeConta")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("TipoDeConta");
 
                     b.HasKey("Id");
 

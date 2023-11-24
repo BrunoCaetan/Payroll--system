@@ -14,7 +14,7 @@ namespace Payroll_system
             builder.Services.AddControllersWithViews();
 
             builder.Services.AddDbContext<BancoContext>
-                (options => options.UseSqlServer("Data Source=DESKTOP-NVEI55A; Database=Payroll_MVC; Integrated Security=False;User ID=sa;Password=sd07; Encrypt=False; TrustServerCertificate=False"));
+                (options => options.UseSqlServer("Data Source=DESKTOP-NVEI55A; Database=Payroll_teste; Integrated Security=False;User ID=sa;Password=sd07; Encrypt=False; TrustServerCertificate=False"));
             
 
             var app = builder.Build();
