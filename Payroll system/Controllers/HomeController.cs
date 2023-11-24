@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Payroll_system.Models;
-using Payroll_system.Repositorio;
+//using Payroll_system.Repositorio;
 using System.Diagnostics;
 
 namespace Payroll_system.Controllers
