@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<Payroll_system.Models.EmpresaModel>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Empresa";
 }
 
-<h1 class="tituloEmpresa">Informações da Empresa</h1>
+<h1 class="titulo">Informações da Empresa</h1>
 <br />
 
 @* <p>
@@ -56,8 +56,8 @@
                 @Html.DisplayFor(modelItem => item.Email)
             </td>
             <td>
-                    <a asp-action="Edit" asp-route-id="@item.NomeDaEmpresa" class="btn btn-primary">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.NomeDaEmpresa" class="btn btn-warning">Details</a> |
+                    <a asp-action="Edit" asp-route-id="@item.NomeDaEmpresa" class="btn btn-primary">Editar</a> 
+                    <a asp-action="Details" asp-route-id="@item.NomeDaEmpresa" class="btn btn-warning">Detalhes</a> 
 @*                 <a asp-action="Delete" asp-route-id="@item.NomeDaEmpresa">Delete</a> *@
             </td>
         </tr>

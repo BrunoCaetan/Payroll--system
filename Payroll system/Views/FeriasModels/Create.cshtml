@@ -1,12 +1,11 @@
 ﻿@model Payroll_system.Models.FeriasModel
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Cadastrar Férias";
 }
 
-<h1>Create</h1>
+<h1 class="titulo">Cadastrar Férias</h1>
 
-<h4>FeriasModel</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -28,14 +27,14 @@
                 <span asp-validation-for="DataFerias" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Create" class="btn btn-success" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index" class="btn btn-secondary">Voltar</a>
 </div>
 
 @section Scripts {

@@ -1,13 +1,13 @@
 ﻿@model Payroll_system.Models.EmpresaModel
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Detalhes";
 }
 
-<h1>Details</h1>
+<h1 class ="titulo">Detalhes</h1>
 
 <div>
-    <h4>EmpresaModel</h4>
+    <h4>Da Empresa</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -49,6 +49,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.NomeDaEmpresa">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model?.NomeDaEmpresa" class="btn btn-primary">Editar</a> |
+    <a asp-action="Index" class="btn btn-secondary">Voltar</a>
 </div>
