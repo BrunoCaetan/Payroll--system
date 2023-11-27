@@ -5,112 +5,113 @@ namespace Payroll_system.Models
 {
     public class FuncionarioModel
     {
+
         [Column("Id")]
         [Display(Name = "Id")]
-        public int Id { get; set; }
         [Required(ErrorMessage = "Preecha o campo")]
+        public int Id { get; set; }
 
         [Column("Name")]
         [Display(Name = "Name")]
-        public string Name { get; set; }
         [Required(ErrorMessage = "Preecha o campo")]
+        public string Name { get; set; }
 
         [Column("Login")]
         [Display(Name = "Login")]
-        public string Login { get; set; }
         [Required(ErrorMessage = "Preecha o campo")]
+        public string Login { get; set; }
 
         [Column("Senha")]
         [Display(Name = "Senha")]
-        public string Senha { get; set; }
         [Required(ErrorMessage = "Preecha o campo")]
+        public string Senha { get; set; }
 
         [Column("Email")]
         [Display(Name = "Email")]
-        public string Email { get; set; }
         [Required(ErrorMessage = "Preecha o campo")]
         [EmailAddress(ErrorMessage = "Email valido!")]
+        public string Email { get; set; }
 
         [Column("Cpf")]
         [Display(Name = "Cpf")]
-        public int Cpf { get; set; }
         [Required(ErrorMessage = "Preecha o campo")]
+        public int Cpf { get; set; }
 
         [Column("DataDeNascimento")]
         [Display(Name = "DataDeNascimento")]
-        public int DataDeNascimento { get; set; }
         [Required(ErrorMessage = "Preecha o campo")]
+        public int DataDeNascimento { get; set; }
 
         [Column("Rg")]
         [Display(Name = "Rg")]
-        public int Rg { get; set; }
         [Required(ErrorMessage = "Preecha o campo")]
+        public int Rg { get; set; }
 
         [Column("EstadoCivil")]
         [Display(Name = "EstadoCivil")]
-        public string EstadoCivil { get; set; }
         [Required(ErrorMessage = "Preecha o campo")]
+        public string EstadoCivil { get; set; }
 
         [Column("Endereco")]
         [Display(Name = "Endereco")]
-        public string Endereco { get; set; }
         [Required(ErrorMessage = "Preecha o campo")]
+        public string Endereco { get; set; }
 
         [Column("Telefone")]
         [Display(Name = "Telefone")]
-        public int Telefone { get; set; }
         [Required(ErrorMessage = "Preecha o campo")]
         [Phone(ErrorMessage = "Numero invalido!")]
-
+        public int Telefone { get; set; }
+        
         [Column("Pis")]
         [Display(Name = "Pis")]
-        public int Pis { get; set; }
         [Required(ErrorMessage = "Preecha o campo")]
+        public int Pis { get; set; }
 
         [Column("Cargo")]
         [Display(Name = "Cargo")]
-        public string Cargo { get; set; }
         [Required(ErrorMessage = "Preecha o campo")]
+        public string Cargo { get; set; }
 
         [Column("Departamento")]
         [Display(Name = "Departamento")]
-        public string Departamento { get; set; }
         [Required(ErrorMessage = "Preecha o campo")]
+        public string Departamento { get; set; }
 
         [Column("SalarioContratual")]
         [Display(Name = "SalarioContratual")]
-        public double SalarioContratual { get; set; }
         [Required(ErrorMessage = "Preecha o campo")]
+        public double SalarioBruto { get; set; }
 
         [Column("DataDeAdmissão")]
         [Display(Name = "DataDeAdmissão")]
-        public int DataDeAdmissão { get; set; }
         [Required(ErrorMessage = "Preecha o campo")]
+        public int DataDeAdmissão { get; set; }
 
         [Column("Nacionalidade")]
         [Display(Name = "Nacionalidade")]
-        public string Nacionalidade { get; set; }
         [Required(ErrorMessage = "Preecha o campo")]
+        public string Nacionalidade { get; set; }
 
         [Column("Sexo")]
         [Display(Name = "Sexo")]
-        public string Sexo { get; set; }
         [Required(ErrorMessage = "Preecha o campo")]
+        public string Sexo { get; set; }
 
         [Column("HorasTrabalhadas")]
         [Display(Name = "HorasTrabalhadas")]
-        public string HorasTrabalhadas { get; set; }
         [Required(ErrorMessage = "Preecha o campo")]
+        public string HorasTrabalhadas { get; set; }
 
         [Column("NomeDoBanco")]
         [Display(Name = "NomeDoBanco")]
-        public string NomeDoBanco { get; set; }
         [Required(ErrorMessage = "Preecha o campo")]
+        public string NomeDoBanco { get; set; }
 
         [Column("Agencia")]
         [Display(Name = "Agencia")]
-        public int Agencia { get; set; }
         [Required(ErrorMessage = "Preecha o campo")]
+        public int Agencia { get; set; }
 
         [Column("Conta")]
         [Display(Name = "Conta")]

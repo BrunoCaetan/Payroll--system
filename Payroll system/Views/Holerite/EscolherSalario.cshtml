@@ -1,0 +1,15 @@
+﻿@model List<double>
+
+<h2>Escolher Salário</h2>
+
+<form method="post" asp-controller="Holerite" asp-action="EscolherSalario">
+    <label for="salario">Escolha o Salário:</label>
+    <select id="salario" name="id" class="form-control">
+        @foreach (var salario in Model)
+        {
+            <option value="@salario">@salario</option>
+        }
+    </select>
+
+    <button type="submit" class="btn btn-primary">Selecionar Salário</button>
+</form>

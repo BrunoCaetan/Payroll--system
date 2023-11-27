@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Payroll_system.Models.FuncionarioModel>
+
+<h2>Lista de Funcionários</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Cargo</th>
+            <th>Departamento</th>
+            <th>Salário Bruto</th>
+            <th>Horas Trabalhadas</th>
+            <th>Opções</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var funcionario in Model)
+        {
+            <tr>
+                <td>@funcionario.Name</td>
+                <td>@funcionario.Email</td>
+                <td>@funcionario.Cargo</td>
+                <td>@funcionario.Departamento</td>
+                <td>@funcionario.SalarioBruto</td>
+                <td>@funcionario.HorasTrabalhadas</td>
+                <td>
+                    <a asp-controller="Holerite" asp-action="GerarHolerite" asp-route-id="@funcionario.Id" class="btn btn-primary">Gerar Holerite</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

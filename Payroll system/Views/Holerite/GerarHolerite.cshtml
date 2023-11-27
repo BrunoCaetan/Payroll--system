@@ -1,0 +1,45 @@
+﻿<!-- Views/Holerite/GerarHolerite.cshtml -->
+@model Payroll_system.Models.HoleriteModel
+
+<h2>Holerite Gerado</h2>
+
+<p>@ViewBag.Notificacao</p>
+
+<p>@ViewBag.PerguntaEmail</p>
+
+<!-- Adicione um botão para enviar a mensagem de sucesso -->
+<form asp-controller="Holerite" asp-action="HoleriteEnviadoComSucesso" method="post">
+    <button type="submit" class="btn btn-success">Enviar</button>
+</form>
+
+
+<h3>Detalhes do Funcionário</h3>
+<p>Salário Bruto: @Model.SalarioBruto</p>
+<p>Horas Trabalhadas: @Model.HorasTrabalhadas</p>
+
+<h3>Detalhes do Holerite</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Descrição</th>
+            <th>Valor</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Salário Bruto</td>
+            <td>@Model.SalarioBruto</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Atrasos e Faltas</td>
+            <td>@Model.AtrasosEFaltas</td>
+        </tr>
+        <tr>
+            <td>Salário Líquido</td>
+            <td>@Model.SalarioLiquido</td>
+        </tr>
+        <!-- Adicione outros itens calculados aqui -->
+    </tbody>
+</table>
+
+<a asp-controller="Holerite" asp-action="Index" class="btn btn-primary">Voltar</a>
