@@ -16,4 +16,4 @@ namespace Payroll_system.Data
         public DbSet<UsuarioModel> Usuarios { get; set; }
     }
 }
-//  
+

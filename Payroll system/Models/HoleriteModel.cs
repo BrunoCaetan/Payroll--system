@@ -4,7 +4,7 @@ namespace Payroll_system.Models
 {
     public class HoleriteModel
     {
-        [Key]
+        
         public string HorasTrabalhadas { get; set; }
         public double AtrasosEFaltas { get; set; }
         public double SalarioBruto { get; set; }
